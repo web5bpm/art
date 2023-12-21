@@ -1,0 +1,560 @@
+main{
+    width: 100%;
+    position: relative;
+}
+main .main-child{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+main .main-child .over{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 80px;
+}
+
+main .main-child .over .main-grand-child{
+    border-radius: 15px;
+    border: 1px solid white;
+    position: absolute;
+    transition: .5s;
+    overflow: hidden;
+}
+main .main-child .over .main-grand-child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+main .main-child .over .main-grand-child img:hover{
+    scale: 1.2;
+}
+main .main-child .over .main-grand-child .entering{
+    position: absolute;
+    top: 0;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid white;
+    pointer-events: none;
+}
+main .main-child .over .main-grand-child .entering span{
+    display: block; padding: 10px; margin: 10px 0; background-color: rgba(200, 200, 2000, .75); font-weight: 600; font-size: 1.1rem;
+}
+main .main-child .over .main-grand-child .entering a{
+    display: block; background-color: orangered; padding: 10px; 
+    color: white; 
+    text-decoration: none; 
+    transition: .5; 
+    pointer-events: visible;
+}
+main .main-child .over .main-grand-child .entering a:hover{
+    background-color: rgb(221, 70, 15);
+}
+main .main-child .over .child1{
+    z-index: 3800;
+    width: 300px;
+    height: 300px;
+    top: 134px;
+    left: 0;
+}
+main .main-child .over .child2{
+    z-index: 3850;
+    width: 330px;
+    height: 330px;
+    top: 120px;
+    left: 15%;
+}
+main .main-child .over .child3{
+    z-index: 3900;
+    width: 360px;
+    height: 360px;
+    top: 105px;
+}
+main .main-child .over  .child4{
+    z-index: 3950;
+    width: 390px;
+    height: 390px;
+    top: 90px;
+    right: 15%;
+}
+main .main-child .over .child5{
+    z-index: 4000;
+    width: 400px;
+    height: 420px;
+    top: 75px;
+    right: 0;
+}
+main .main-child .over .child1:hover{
+z-index: 4000; width: 420px; height: 420px; top: 75px;
+}
+main .main-child .over .child1:hover ~ .child2{
+width: 390px; height: 390px; z-index: 3950; top: 90px;
+}
+main .main-child .over .child1:hover ~ .child3{
+width: 360px; height: 360px; z-index: 3900; top: 105px;
+}
+main .main-child .over .child1:hover ~ .child4{
+width: 330px; height: 330px; z-index: 3850; top: 120px;
+}
+main .main-child .over .child1:hover ~ .child5{
+    width: 300px; height: 300px; z-index: 3800; top: 135px;
+}
+
+
+main .main-child .over .child2:hover{
+    z-index: 4000; width: 420px; height: 420px; top: 75px;
+}
+main .main-child .over .child2:hover ~ .child3{
+    width: 360px; height: 360px; z-index: 3900; top: 105px;
+}
+main .main-child .over .child2:hover ~ .child4{
+    width: 330px; height: 330px; z-index: 3850; top: 120px;
+}
+main .main-child .over .child2:hover ~ .child5{
+    width: 300px; height: 300px; z-index: 3800; top: 135px;
+}
+
+main .main-child .over .child3:hover{
+    z-index: 4000; width: 420px; height: 420px; top: 75px;
+}
+main .main-child .over .child3:hover ~ .child4{
+    width: 330px; height: 330px; z-index: 3850; top: 120px;
+}
+main .main-child .over .child3:hover ~ .child5{
+    width: 300px; height: 300px; z-index: 3800; top: 135px;
+}
+
+main .main-child .over .child4:hover{
+    z-index: 4000; width: 420px; height: 420px; top: 75px;
+}
+main .main-child .over .child4:hover ~ .child5{
+    width: 300px; height: 300px; z-index: 3800; top: 135px;
+}
+
+main .profession{
+    width: 98%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: 430px;
+    padding: 50px 30px;
+    background: linear-gradient(to right, rgba(220, 220, 224, .5), white);
+}
+main .profession .professions{
+    width: 45%;
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: auto;
+    border-bottom: #0D9CA1 3px solid;
+    margin-bottom: 20px;
+}
+main .profession .professions div{
+    width: 42%;
+    height: 100%;
+}
+main .profession .professions .professions-text{
+    text-align: justify;
+    display: block;
+    padding: 15px;
+    width: 48%;
+}
+main .profession .professions .professions-text::first-line{
+    background-color: #0D9CA1;
+    color: #F2F2F2;
+}
+main .profession .professions .professions-head{
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+main .heading{
+    text-align: center; 
+    font-weight: 900; 
+    font-family: consolas;
+    position: relative;
+    top: 450px;
+    font-size: 2.2rem;
+}
+main .carousel{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 470px;
+    margin: 40px auto;
+}
+main .carousel .carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+main .carousel .carousel-inner .carousel-item{
+    width: 100%;
+    height: 100%;
+}
+main .carousel .carousel-inner .carousel-item img{
+    width: calc((100% / 3) - 4px);
+    margin-right: 4px;
+    height: 100%;
+    object-fit: cover;
+}
+main .carousel .carousel-inner .carousel-item img:last-child{
+    margin-right: 0;
+    width: calc(100% / 3);
+}
+
+main .main-child-a{
+    color: gray; transition: .5s; width: 100px; margin: 0 calc((100% - 100px) / 2); text-decoration: none; text-align: center; border-bottom: 1px solid orangered; position: relative; top: 470px;
+}
+
+
+
+main .world-inform{
+    position: relative; 
+    top: 500px;
+    width: 100%;
+    padding: 30px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+main .world-inform h1{
+    font-size: 3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    padding: 20px;
+    background-color: white;
+}
+main .world-inform .world-inform-child{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+main .world-inform .world-inform-child .world-inform-child-img{
+    width: 500px;
+    height: 300px;
+    border-left: 6px solid orangered;
+    position: relative;
+    overflow: hidden;
+}
+main .world-inform .world-inform-child .world-inform-child-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .world-inform .world-inform-child .world-inform-child-img .photo-front{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    transition: .4s;
+    text-align: center;
+    padding: 20px 0;
+}
+main .world-inform .world-inform-child .world-inform-child-img .photo-front p{
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: inline;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.65);
+    line-height: 2.5;
+    word-spacing: 5px;
+}
+main .world-inform .world-inform-child .world-inform-child-img .photo-front ion-icon{
+    color: #0D9CA1;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 5rem;
+    cursor: pointer;
+}
+main .world-inform .world-inform-child .world-inform-child-img:hover .photo-front{
+    left: 0;
+}
+main .world-inform .world-inform-child .world-inform-child-text{
+    max-width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    overflow: auto;
+    padding: 0 20px;
+}
+main .world-inform .world-inform-child .world-inform-child-text::-webkit-scrollbar{
+    background-color: #0D9CA1;
+    width: 6px;
+    border-radius: 0 0 50% 50%;
+}
+main .world-inform .world-inform-child .world-inform-child-text h2{
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main .world-inform .world-inform-child .world-inform-child-text span{
+    width: 400px;
+    text-align: justify;
+    align-self: flex-end;
+}
+main .world-inform .world-inform-child .world-inform-child-text a{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #223243;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    align-self: flex-end;
+    transition: .4s;
+}
+main .world-inform .world-inform-child .world-inform-child-text a:hover{
+    background-color: white;
+    color: #223243;
+    border: 1px solid #223243;
+}
+
+
+footer{
+    position: relative;
+    top: 560px;
+}
+
+
+
+.video{
+    z-index: 20000; 
+    position: fixed;
+    top: 0; 
+    width: 90%; 
+    height: 90vh; 
+    background-color: black;  
+    margin: 4vh 5%;
+    display: none;
+}
+.video-back{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 19000;
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 1230px){
+    main .main-child .over{
+        width: 80%;
+    }  
+    main .profession .professions .professions-head{
+        font-size: 1.6rem;
+        width: 37%;
+    }
+    main .profession .professions .professions-text{
+        width: 53%;
+    }
+}
+
+@media(max-width: 1100px){
+    main .main-child .over{width: 85%;}  
+    main .profession .professions{height: auto;}
+    main .carousel{height: 250px;}
+    main .world-inform{padding: 15px;}
+    main .world-inform .world-inform-child .world-inform-child-img{width: 45%; height: 250px;}
+    main .world-inform .world-inform-child .world-inform-child-text{width: 55%; height: 250px;}
+    main .world-inform .world-inform-child .world-inform-child-text span{width: 70%;}
+}
+
+@media(max-width: 1000px){
+    main .main-child .over{
+        width: 93%;
+    }  
+    main .main-child .over .child2{
+        left: 12.5%;
+    }
+    main .main-child .over .child4{
+        right: 12.5%;
+    }
+    main .main-child .over .child5{
+        width: 360px;
+    }
+    .figure{
+        display: none!important;
+    }
+}
+
+@media(max-width: 900px){
+    main .main-child, .profession{
+        width: 100%;
+    }  
+    main .main-child .over{
+        width: 100%;
+    } 
+    main .main-child .over .child2{
+        left: 11%;
+    }
+    main .main-child .over .child4{
+        right: 11%;
+    }
+    main .carousel{height: 220px;}
+
+    main .profession .professions{width: 100%;}
+}
+
+@media(max-width: 800px){
+    main .main-child .over .child1, .child2{
+        display: none;
+    }
+    main .main-child .over .child3{
+        left: 0;
+    }
+    main .main-child .over .child4{
+        left: 20%;
+    }
+    main .world-inform .world-inform-child{
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    main .world-inform h1{padding: 8px; font-size: 2rem;}
+    main .world-inform .world-inform-child .world-inform-child-img{width: 100%; height: 300px;}
+    main .world-inform .world-inform-child .world-inform-child-text{width: 100%; height: 300px;}
+    main .carousel{height: 300px;}
+    main .carousel .carousel-inner .carousel-item img{width: 100%; height: 100%; margin: 0;}
+    main .carousel .carousel-inner .carousel-item img:last-child{width: 100%; height: 100%; margin: 0;}
+    main .carousel .carousel-inner .carousel-item .will-delete{display: none;}
+}
+@media(max-width: 600px){
+    main .main-child .over{bottom: 65px;}
+    main .main-child .over .child4{left: 14%;}
+    main .main-child .main-child-h2{font-size: 1.5rem!important; top: 5px;}
+    main .main-child .main-child-a{ bottom: 0!important;}
+
+    main .profession{padding: 20px 5px;}
+
+    main .world-inform .world-inform-child{width: 90%;}
+}
+
+@media(max-width: 500px){
+    main .main-child .over .child3, .child4{
+        display: none;
+    }
+    main .main-child .over .child5{
+        left: 0;
+        top: 95px;
+        width: 100%;
+        height: 370px;
+        border-radius: 0;
+    }
+    main .profession .professions{display: block;}
+    main .profession .professions .professions-head{
+        width: 94%;
+        height: auto;
+        margin: 10px auto;
+    }
+    main .profession .professions .professions-text{
+        width: 94%;
+        height: auto;
+        margin: 20px auto;
+    }
+    main .world-inform {gap: 12px;}
+    main .world-inform .world-inform-child{width: 90%;}
+    main .world-inform .world-inform-child .world-inform-child-text h2{width: 80%; margin: 0 auto; font-size: 1.5rem;}
+    main .world-inform .world-inform-child .world-inform-child-text span{width: 100%; font-size: 1rem;}
+    main .world-inform .world-inform-child .world-inform-child-text a{padding: 12px 0; width: 100%; text-align: center; display: block;}
+}
+@media(max-width: 450px){
+    main .world-inform .world-inform-child{width: 98%;}
+    main .world-inform .world-inform-child .world-inform-child-text h2{width: 80%; margin: 0 auto; font-size: 1.2rem;}
+    main .world-inform .world-inform-child .world-inform-child-text span{width: 100%; font-size: .8rem;}
+    main .world-inform .world-inform-child .world-inform-child-img{height: 240px;}
+}
+
+
+
+
+
+@media(min-width: 1600px){
+    main .main-child .over .child1{ width: 400px; height: 400px; top: 170px;}
+    main .main-child .over .child2{ width: 450px; height: 450px; top: 145px;}
+    main .main-child .over .child3{ width: 500px; height: 500px; top: 120px;}
+    main .main-child .over .child4{ width: 550px; height: 550px; top: 95px;}
+    main .main-child .over .child5{ width: 600px; height: 600px; top: 70px;}
+
+    main .main-child .over .child1:hover{width: 600px; height: 600px; top: 70px; z-index: 4000;}
+    main .main-child .over .child1:hover ~ .child2{width: 550px; height: 550px; top: 95px;}
+    main .main-child .over .child1:hover ~ .child3{width: 500px; height: 500px; top: 120px;}
+    main .main-child .over .child1:hover ~ .child4{width: 450px; height: 450px; top: 145px;}
+    main .main-child .over .child1:hover ~ .child5{width: 400px; height: 400px; top: 170px;}
+
+    main .main-child .over .child2:hover{width: 600px; height: 600px; top: 70px; z-index: 4000;}
+    main .main-child .over .child2:hover ~ .child3{width: 500px; height: 500px; top: 120px;}
+    main .main-child .over .child2:hover ~ .child4{width: 450px; height: 450px; top: 145px;}
+    main .main-child .over .child2:hover ~ .child5{width: 400px; height: 400px; top: 170px;}
+
+    main .main-child .over .child3:hover{width: 600px; height: 600px; top: 70px; z-index: 4000;}
+    main .main-child .over .child3:hover ~ .child4{width: 450px; height: 450px; top: 145px;}
+    main .main-child .over .child3:hover ~ .child5{width: 400px; height: 400px; top: 170px;}
+
+    main .main-child .over .child4:hover{width: 600px; height: 600px; top: 70px; z-index: 4000;}
+    main .main-child .over .child4:hover ~ .child5{width: 400px; height: 400px; top: 170px;}
+
+    main .profession{
+        top: 620px;
+    }
+
+    main .carousel{height: 500px;}
+    main .main-child-a{top: 650px; font-size: 1.7rem; width: 300px; margin: 0 calc((100% - 300px) / 2);}
+    main .world-inform{
+        top: 690px;
+    }
+    footer{
+        top: 760px;
+    }
+    main .heading{
+        top: 635px;
+    }
+    main .carousel{
+        top: 650px;
+    }
+}
+
+@media(min-width: 2600px){
+    main .main-child .over{
+        width: 60%;
+    }
+}

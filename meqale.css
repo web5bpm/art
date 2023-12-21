@@ -1,0 +1,44 @@
+main{width: 100%;}
+main .journal{width: 90%; display: flex; flex-wrap: wrap; margin: 30px auto; justify-content: space-between; gap: 30px;}
+main .journal .journal-child{width: 48%; border: 1px solid #0D9CA1; padding: 15px; display: flex; justify-content: space-between;}
+main .journal .journal-child .journal-child-face{width: 135px; height: 200px; display: flex; flex-direction: column; color: white; align-items: center; gap: 10px; text-align: center; padding-top: 15px;}
+main .journal .journal-child .journal-child-face span{font-weight: 900;}
+main .journal .journal-child .journal-child-face small{font-size: 10px; font-weight: 900;}
+main .journal .journal-child .journal-child-face ion-icon{font-size: 40px;}
+main .journal .journal-child .journal-child-inform{width: calc(100% - 140px); display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-1{display: flex; flex-direction: column; gap: 5px;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-1 h5{text-align: center; color: rgb(25, 156, 196); font-weight: 900;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-1 p{width: 80%; height: 85px; overflow-y: scroll; align-self: flex-end;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-1 p::-webkit-scrollbar{width: .6rem;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-1 p::-webkit-scrollbar-track{background: rgb(25, 156, 196);}
+main .journal .journal-child .journal-child-inform .journal-child-inform-1 p::-webkit-scrollbar-thumb{background: rgb(64, 207, 226); border-radius: 0 0 10px 10px;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-2{display: flex; gap: 10px; justify-content: center; align-items: center;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-2 a{text-decoration: none; color: black;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-2 button{border: 0; outline: 0; background: transparent;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-2 button ion-icon{margin: 0 2px; font-size: 1.2rem; color: white;  border-radius: 50%; padding: 10px;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-2 a ion-icon{margin: 0 2px; font-size: 1.2rem; color: white;  border-radius: 50%; padding: 10px;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-2 button ion-icon{background-color: green;}
+main .journal .journal-child .journal-child-inform .journal-child-inform-2 a ion-icon{background-color: blue;}
+
+
+
+@media(max-width: 990px){
+    main .journal .journal-child{flex-direction: column; justify-content: center; align-items: center; gap: 30px; width: 47%;}
+    main .journal .journal-child .journal-child-inform{width: 75%;}
+    main .journal .journal-child .journal-child-inform .journal-child-inform-1 p{width: 95%;}
+}
+@media(max-width: 800px){
+    main .journal .journal-child .journal-child-inform{width: 95%;}
+    main .journal .journal-child .journal-child-face{width: 170px; height: 230px; padding-top: 30px;}
+}
+
+@media(max-width: 600px){
+    main .journal{justify-content: center; align-items: center;}
+    main .journal .journal-child{width: 90%;}
+}
+
+
+
+@media(min-width: 1600px){
+    main .journal .journal-child{width: 30%;}
+}
